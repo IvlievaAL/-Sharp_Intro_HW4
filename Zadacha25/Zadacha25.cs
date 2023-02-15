@@ -3,3 +3,8 @@
 3, 5 -> 243 (3⁵)
 
 2, 4 -> 16*/
+
+double AtodegreeB (double A, int B)
+{
+    
+}
