@@ -5,3 +5,5 @@
 82 -> 10
 
 9012 -> 12*/
+System.Console.WriteLine("Enter N: ");
+int N=int.Parse(Console.ReadLine());
