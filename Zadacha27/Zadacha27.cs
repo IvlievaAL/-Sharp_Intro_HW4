@@ -21,10 +21,10 @@ for (; Ndivided>=1;Ndigits++)
 int [] NumbertoMassive (int N) //подзадача - положить цифры числа в массив
   {
    CountingDigitsinNumber(N);
+   Ndivided=Ndivided+(absnumber/10);
+   int Ndivided1=absnumber%10;
    int[] arrayN=new int[Ndigits];
-Ndivided=Ndivided+(absnumber/10);
-int Ndivided1=absnumber%10;
-for (int index=Ndigits-1;index>=0;index=index-1)
+   for (int index=Ndigits-1;index>=0;index=index-1)
    {
       arrayN[index]=Ndivided1;
       Ndivided1=Ndivided%10;
@@ -41,8 +41,8 @@ if (N==0)
 else
 {
  NumbertoMassive (N);
- int Sum=0;
- for (int index=0;index>N;index++)
+ int Sum=NumbertoMassive (N)[0];
+ for (int index=1;index<=Ndigits-1;index++)
    {
     Sum=Sum+NumbertoMassive (N)[index];
    }
