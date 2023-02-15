@@ -6,5 +6,12 @@
 
 double AtodegreeB (double A, int B)
 {
-    
+    if (B<=0)
+    {
+        System.Console.WriteLine("B must be natural, try again");
+        return 0;
+    }
+    else {
+        
+    }
 }
