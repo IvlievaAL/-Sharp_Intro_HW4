@@ -11,7 +11,10 @@ void PrintMassiveOf8RandomNumbers()
  for (int index=0; index<8; index++)
  {
     ArrayOf8Numbers[index]=rand.Next();
-    System.Console.WriteLine (ArrayOf8Numbers[index]);
  }
+void MassiveAsString (int [] ArrayOf8Numbers)
+{string str = string.Join(" , ", ArrayOf8Numbers); 
+System.Console.WriteLine(str); } 
+MassiveAsString (ArrayOf8Numbers);
 }
 PrintMassiveOf8RandomNumbers();
